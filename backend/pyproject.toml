@@ -1,0 +1,24 @@
+[project]
+name = "runners-backend"
+version = "0.1.0"
+description = "Personal adaptive running-plan backend (Strava, Apple Health/Health Connect, Garmin, COROS)"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "sqlmodel>=0.0.22",
+  "httpx>=0.27",
+  "pydantic-settings>=2.4",
+  "garminconnect>=0.3.5",
+  "mcp>=2.3",
+  "anthropic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 180

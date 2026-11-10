@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+backend/data/
+.env
+node_modules/
+.expo/
+dist/
+ios/
+android/
+*.log
